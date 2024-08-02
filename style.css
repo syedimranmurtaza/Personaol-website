@@ -233,6 +233,11 @@ html {
 }
 
 
+#firstpart .sec4 button{
+    border-radius: 5px;
+    padding: 3px 10px;
+    text-align: left;
+}
 
 
 
