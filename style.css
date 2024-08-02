@@ -1,0 +1,301 @@
+*::selection {
+    background-color: salmon;
+}
+
+body[theme="black"] {
+    background-color: black;
+}
+
+body {
+    transition: background-color ease-out .5s;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(fonts/NeueMachina-Light.otf);
+}
+
+@font-face {
+    font-family: myfont2;
+    src: url(fonts/Satoshi-Regular.ttf);
+}
+
+body[theme="black"] .section {
+    color: white;
+    border-color: white;
+}
+
+body[theme="salmon"] {
+    background-color: #EF9D71;
+    border-color: rgb(54, 35, 33);
+}
+
+
+body[theme="salmon"] .section {
+    color: rgb(63, 40, 39);
+}
+
+body[theme="cyan"] {
+    background-color: #AEDEE0;
+}
+
+body[theme="cyan"] .section {
+    color: #1f2627;
+    border-color: rgb(0, 0, 0);
+}
+
+body[theme="white"] {
+    background-color: white;
+}
+
+body[theme="white"] .section {
+    color: #000000;
+    border-color: black;
+}
+
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.videoscreen {
+    clip-path: circle(var(--clip, 100%) at 50% 50%);
+}
+
+
+
+.glow-text {
+    text-shadow: 0 0 10px white, 0 0 1px white;
+}
+
+.fade-text {
+    transition: opacity 0.3s ease;
+}
+
+.fade-text.hidden {
+    opacity: 0;
+}
+
+.transition-icon {
+    transition: opacity 0.3s ease;
+}
+
+.transition-icon.hidden-icon {
+    opacity: 0;
+}
+
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Set the background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Set the color of the scrollbar thumb */
+    border-radius: 4px;
+    /* Add rounded corners to the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Change the color on hover */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin;
+    /* Set the scrollbar width */
+    scrollbar-color: #888 #f1f1f1;
+    /* Set the thumb and track colors */
+}
+
+
+
+.desktop-content {
+    display: block;
+}
+
+/* Styles for mobile-only message */
+.mobile-message {
+    display: none;
+}
+
+/* Media query for devices with a max-width of 768px (mobile) */
+@media only screen and (max-width: 768px) {
+    .desktop-content {
+        display: none;
+        /* Hide all desktop content */
+    }
+
+    .mobile-message {
+        display: flex;
+        /* Show the mobile-only message */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        padding: 20px;
+        height: 100vh;
+        /* Full height of the viewport */
+        width: 100vw;
+        /* Full width of the viewport */
+        position: fixed;
+        /* Stay fixed in the viewport */
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        color: white;
+        font-family: myfont2;
+
+    }
+
+
+}
+
+
+
+
+
+/* Ensure that the header stays on top */
+#header {
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=1);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+
+    padding: 10px;
+
+    color: hsla(0, 0%, 0%, 0);
+}
+
+
+
+#header #header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-content .logo {
+    padding: 8px 32px;
+    font-size: 16px;
+    font-family: myfont3;
+    font-weight: 900;
+    cursor: pointer;
+
+}
+
+#btns {
+    font-family: myfont2;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 8px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#btns .extra {
+    align-self: center;
+    padding: 3px 8px;
+    background-color: rgb(176, 128, 60);
+    border-radius: 6px;
+}
+
+@font-face {
+    font-family: myfont3;
+    src: url(./fonts/NeueMachina-Ultrabold.otf);
+}
+
+#header {
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+}
+
+#header-content {
+    transition: color 0.5s ease;
+}
+
+
+
+
+
+
+
+
+.resptxt {
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+
+}
+
+.resptxt span {
+    display: block;
+    font-weight: bold;
+    color: #b6ac4b;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#show img{
+    border-radius: 15px;  
+    width: 80%; 
+}
+
+#show h1{
+    font-size: 35px;
+    margin-top: 10px;
+    font-family: myfont3;
+    font-weight: 900;
+}
+
+#show p{
+    font-family: myfont2;
+    font-weight: 500;
+    width: 80%;
+}
+
+#firstpart{
+    justify-content: space-around !important;
+    padding-top: 100px !important;
+    color: white !important;
+    font-family: myfont;
+    font-weight: 600;
+    font-size: 25px;
+    padding-left: 34px;
+    padding-right: 34px;
+    gap: -17px;
+
+}
+
+#firstpart div{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    color: rgb(37, 131, 96);
+}
+
+
+.middlepart {
+    transition: top 0.3s ease-out; /* Smooth transition for the top position */
+}
+
