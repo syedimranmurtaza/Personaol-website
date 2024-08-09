@@ -1,3 +1,4 @@
+
 function HomePageAnimation() {
     // Set initial scale for .sidesm
     gsap.set(".sidesm", { scale: 2.1 });
@@ -36,6 +37,8 @@ function HomePageAnimation() {
 HomePageAnimation();
 
 
+
+
 function slidesOne() {
     gsap.to(".slide", {
         scrollTrigger: {
@@ -49,6 +52,9 @@ function slidesOne() {
     });
 }
 slidesOne();
+
+
+
 
 function teamPart() {
     const elements = document.querySelectorAll(".listelem");
@@ -106,47 +112,29 @@ function teamPart() {
     window.addEventListener("scroll", checkForVisibleElement);
     window.addEventListener("mousemove", checkForVisibleElement);
 }
-
 teamPart();
 
 
 
 
+function lastVideo(){
+    const video = document.getElementById("myVideo");
+const playButton = document.getElementById("playButton");
+const playButtonContainer = document.getElementById("playButtonContainer");
 
+playButtonContainer.addEventListener("click", function () {
+  video.play().then(() => {
+    playButtonContainer.style.display = "none";
+  }).catch(error => {
+    console.error("Error playing video:", error);
+  });
+});
 
-
-
-function textparas() {
-    var clutter = "";
-    var textElement = document.querySelector(".textpara");
-
-    // Split text into spans
-    textElement.textContent.split("").forEach(function (e) {
-        if (e == " ") {
-            clutter += `<span>&nbsp;</span>`;
-        } else {
-            clutter += `<span>${e}</span>`;
-        }
-    });
-
-   
-    textElement.innerHTML = clutter;
-
-    gsap.set(".textpara span", { opacity: 0.1 }); //  initial opacity
-    gsap.to(".textpara span", {
-        scrollTrigger: {
-            trigger: ".para",
-            start: "top 60%",
-            end: "bottom 90%",
-            scrub: 1, 
-            
-        },
-        opacity: 1,
-        stagger: 0.03,
-        ease: "power4.out" 
-    });
+video.addEventListener("play", function () {
+  playButtonContainer.style.display = "none";
+});
 }
-textparas();
+lastVideo();
 
 
 
@@ -156,6 +144,8 @@ function locoMotive() {
     })();
 }
 locoMotive();
+
+
 
 function colorChanging() {
     document.querySelectorAll(".section").forEach(function (section) {
@@ -216,7 +206,6 @@ colorChanging();
 
 
 
-
 function soundCreating() {
 
     document.getElementById('toggleSound').addEventListener('click', function () {
@@ -252,25 +241,6 @@ function soundCreating() {
 
 }
 soundCreating();
-
-
-
-
-function devTool(){
-    window.addEventListener('scroll', () => {
-        localStorage.setItem('scrollPosition', window.scrollY);
-      });
-      
-      window.addEventListener('load', () => {
-        const savedPosition = localStorage.getItem('scrollPosition');
-        if (savedPosition) {
-          window.scrollTo(0, parseInt(savedPosition));
-        }
-      });
-}
-devTool();
-
-  
 
 
 

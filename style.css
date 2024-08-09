@@ -1,10 +1,20 @@
 *::selection {
-    background-color: salmon;
+    background-color: #b0803c;
 }
 
 body[theme="black"] {
     background-color: black;
 }
+
+
+
+
+
+
+
+
+
+
 
 body {
     transition: background-color ease-out .5s;
@@ -233,7 +243,7 @@ html {
 }
 
 
-#firstpart .sec4 button{
+#firstpart .sec4 button {
     border-radius: 5px;
     padding: 3px 10px;
     text-align: left;
@@ -261,25 +271,25 @@ html {
     text-align: left;
 }
 
-#show img{
-    border-radius: 15px;  
-    width: 80%; 
+#show img {
+    border-radius: 15px;
+    width: 80%;
 }
 
-#show h1{
+#show h1 {
     font-size: 35px;
     margin-top: 10px;
     font-family: myfont3;
     font-weight: 900;
 }
 
-#show p{
+#show p {
     font-family: myfont2;
     font-weight: 500;
     width: 80%;
 }
 
-#firstpart{
+#firstpart {
     justify-content: space-around !important;
     padding-top: 100px !important;
     color: white !important;
@@ -292,7 +302,7 @@ html {
 
 }
 
-#firstpart div{
+#firstpart div {
     display: flex;
     flex-direction: column;
     gap: 13px;
@@ -301,6 +311,412 @@ html {
 
 
 .middlepart {
-    transition: top 0.3s ease-out; /* Smooth transition for the top position */
+    transition: top 0.3s ease-out;
+    /* Smooth transition for the top position */
 }
 
+
+
+/* ///////////////////////////// */
+
+
+.circle {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%) translateY(-30%);
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    z-index: 332221;
+    
+
+    &:before {
+        content: "";
+        position: relative;
+        display: block;
+        width: 250%;
+        height: 250%;
+        box-sizing: border-box;
+        margin-left: -75%;
+        margin-top: -75%;
+        border-radius: 45px;
+        background-color: #a08059;
+        animation: pulse 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #8D6635;
+        border-radius: 50px;
+        animation: circle 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.33);
+    }
+
+    80%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes circle {
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+
+
+
+/* ////////hovering effects/////// */
+
+#founderbtn:hover{
+    background-color: #5c4320;
+
+}
+
+#btn3:hover{
+    background-color: #274849;
+    cursor: pointer;
+    color: white;
+}
+
+#btn4:hover{
+    background-color: #5c4320
+}
+
+.instaBtn{
+    background-color: #1e5943;
+    color: white;
+    position: absolute;
+    padding: 2px 10px;
+    border-radius: 50px;
+}
+
+.ima{
+    text-align: right;
+}
+
+.hili:hover{
+    background-color: #7c6341;
+}
+
+.header2{
+    opacity: 1 !important;
+    transition: none !important;
+    
+}
+
+
+
+
+
+
+
+/* ///////////////////// */
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+:root {
+  --glow-color: hsl(186 100% 69%);
+}
+
+
+
+
+
+.glowing-btn {
+  position: relative;
+  color: var(--glow-color);
+  cursor: pointer;
+  padding: 0.4em 1em;
+  border: 0.15em solid var(--glow-color);
+  border-radius: 0.45em;
+  background: none;
+  perspective: 2em;
+  font-family: myfont2;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  
+  letter-spacing: 0.2rem;
+
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  animation: border-flicker 2s linear infinite;
+}
+
+.glowing-txt {
+  float: left;
+  margin-right: -0.8em;
+  -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--glow-color);
+  -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--glow-color);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+  animation: text-flicker 3s linear infinite;
+}
+
+.faulty-letter {
+  opacity: 0.5;
+  animation: faulty-flicker 2s linear infinite;
+}
+
+.glowing-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  background: var(--glow-color);
+  pointer-events: none;
+}
+
+.glowing-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  background-color: var(--glow-color);
+  box-shadow: 0 0 2em 0.2em var(--glow-color);
+  transition: opacity 100ms linear;
+}
+
+.glowing-btn:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: none;
+  animation: none;
+}
+
+.glowing-btn:hover .glowing-txt {
+  animation: none;
+}
+
+.glowing-btn:hover .faulty-letter {
+  animation: none;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.glowing-btn:hover:before {
+  filter: blur(1.5em);
+  opacity: 1;
+}
+
+.glowing-btn:hover:after {
+  opacity: 1;
+}
+
+@keyframes faulty-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  19% {
+    opacity: 0.5;
+  }
+  21% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  83% {
+    opacity: 0.4;
+  }
+
+  87% {
+    opacity: 1;
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.1;
+  }
+
+  8% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .glowing-btn{
+    font-size: 1em;
+  }
+}
+
+
+
+
+/* ////////////////////////////// */
+#testbutton {
+    width: 200px;
+    height: 50px;
+    border-radius: 180px;
+    position: relative;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    cursor: pointer;
+    line-height: 0; /* Ensure no extra line height affecting positioning */
+}
+
+#testbutton::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 70%;
+    top: 15%;
+    left: 10%;
+    transition: 0.3s opacity ease-in-out, 0.3s filter ease-in-out;
+    filter: blur(15px);
+    opacity: 0;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+
+#testbutton:hover::before {
+    opacity: 1;
+    filter: blur(25px);
+}
+
+#testbutton::after {
+    content: attr(data-content);
+    text-align: center;
+    line-height: 40px; /* Adjusted to match button height for vertical centering */
+    font-size: 18px;
+    color: rgba(235, 235, 235, 1);
+    font-weight: bold;
+    z-index: 5;
+    position: absolute;
+    display: block;
+    border-radius: 180px;
+    width: 92%;
+    height: 80%;
+    top: 10%;
+    left: 4%;
+    background-color: rgb(19, 20, 22);
+}
+
+
+
+
+
+
+
+  /* ///// */
+
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+
+.imii img{
+    width: 20%;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+.containeri {
+    padding-top: 3vh;
+    width: 100%;
+    margin: auto;
+    columns: 4;
+    column-gap: 20px;
+    padding-bottom: 50px;
+   
+    
+  }
+  .containeri .box {
+    width: 100%;
+    margin: 15px;
+    break-inside: avoid;
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+  .containeri .box img {
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 10px;
+  }
+  
+  img:hover {
+    opacity: 0.95;
+  }
+  
+  .caption {
+    display: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+  }
