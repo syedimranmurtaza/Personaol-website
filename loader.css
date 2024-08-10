@@ -1,0 +1,34 @@
+/* loader.css */
+
+
+
+#loader {
+    position: fixed; /* Fixes the loader relative to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9); /* High opacity background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999999999999; /* Ensure it's on top of all other content */
+}
+
+#loader .word {
+    color: #333; /* Dark text for contrast */
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(50, 255, 50, 0.7), 0 0 5px rgba(100, 255, 100, 0.7); /* Text shadow for visibility */
+    position: relative; /* Proper positioning within the loader */
+}
+
+#loader .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+    z-index: -1; /* Behind the text */
+}

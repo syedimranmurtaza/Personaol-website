@@ -147,6 +147,8 @@ locoMotive();
 
 
 
+
+
 function colorChanging() {
     document.querySelectorAll(".section").forEach(function (section) {
         ScrollTrigger.create({
