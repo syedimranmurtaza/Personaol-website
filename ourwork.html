@@ -34,23 +34,38 @@
 
 
        <div class="start w-full h-full bg-[#111111]">
-        <div class="starting w-full h-screen pt-[100px] bg-[#111111] relative">
-            <div id="con" class="absolute con w-full pt-[100px] bg-[#111111] flex flex-col justify-center items-center">
+        
+        <div class="starting w-full h-screen  pt-[100px] bg-[#111111] relative">
+            <div id="con" class=" absolute con w-full pt-[100px] bg-[#111111] flex flex-col justify-center items-center">
+                
                 <div class="h pt-[50px] text-center">
                     <h1 class="font-[myfont2] text-7xl text-white">What Are You Interested In?</h1>
                     <h2 class="font-[myfont2] text-3xl text-white pt-5">We’ll direct you to exactly what you’re looking for.</h2>
                 </div>
                 <div class="pb-[185px] wbtns flex justify-center items-center absolute top-[360px] gap-5">
-                    <div id="testbutton" data-content="WEBSITES WORK"></div>
-<div id="testbutton" data-content="GRAPHICS DESIGN"></div>
-<div id="testbutton" data-content="DSA THINGS"></div>
-<div id="testbutton" data-content="SOMETHING ELSE"></div>
+                    <div id="testbutton" class="webbutton" data-content="WEBSITES WORK"></div>
+<div id="testbutton" class="graphicsbutton" data-content="GRAPHICS DESIGN"></div>
+<div id="testbutton" class="dsabutton" data-content="DSA THINGS"></div>
+
 
                 </div>
             </div>
     
-            <div id="webpart" class="absolute webpart w-full pt-[100px] bg-[#111111] hidden flex flex-col justify-center items-center opacity-0">
+            <div id="webpart" class="absolute webpart w-full pt-[100px] bg-[#111111] hidden  flex flex-col justify-center items-center opacity-0">
                 <video id="webpart-video" class="w-[50%] " src="./videos/webpart1.MOV"></video>
+                <h3 class="absolute top-[480px] left-[50px] font-[myfont] w-[14rem] text-white">Refresh the page; press <span  class="text-yellow-500">Ctrl+R</span> to start the experience again.</h3>
+            </div>
+
+            <div id="graphicspart" class="z-[1000] absolute w-full pt-[70px] bg-[#111111]  flex flex-col justify-center items-center hidden opacity-0">    
+                <video id="graphicspart-video" class="w-[70%] " src="./videos/graphy.MOV"></video>
+                <h3 class="absolute top-[480px] left-[50px] font-[myfont] w-[14rem] text-white">Refresh the page; press <span  class="text-yellow-500">Ctrl+R</span> to start the experience again.</h3>
+            </div>
+
+            <div id="dsapart" class="z-[1000] absolute w-full pt-[100px] bg-[#111111]  flex flex-col justify-center items-center hidden opacity-0">    
+
+                <h1 class="flex justify-center items-center font-[myfont] absolute top-[200px] text-white text-7xl">COMING <span class="bg-[#B0803C] tracking-[2px] ">SOON!</span></h1>
+
+                <h3 class="absolute top-[480px] left-[50px] font-[myfont] w-[14rem] text-white">Refresh the page; press <span  class="text-yellow-500">Ctrl+R</span> to start the experience again.</h3>
             </div>
             
 
@@ -68,7 +83,25 @@
             </div>
         </div> -->
 
+        <div id="graphicscontent" class="z-[100000] posts hidden opacity-0 transition-opacity duration-1000">
+            
+            <div class="overlay hidden fixed w-full h-screen bg-black/80"></div>   
+            <div class="content">
+                
+                
+                <div class="containeri2">
+                    
+                    <!-- the real container where we have to add js -->
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+
         <div id="webcontent" class="posts hidden  opacity-0 transition-opacity duration-1000">
+            
             <div class="overlay hidden fixed w-full h-screen bg-black/80"></div>   
             <div class="content">
                 <div class="containeri">
@@ -77,11 +110,15 @@
             </div>
         </div>
 
+        
+
 
 
 
 
        </div>
+
+
 
         
 
@@ -144,6 +181,126 @@
        
 
     </div>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+    
+            function addingImages2() {
+              
+                var clutter = "";
+    
+                // Ensure arri is defined and has the expected structure
+                var arri = [
+    { name: "PHOTO-2024-08-11-00-18-35.jpg", image: "./graphics/PHOTO-2024-08-11-00-18-35.jpg" },
+    { name: "Design Image (12).JPG", image: "./graphics/Design Image (12).JPG" },
+    { name: "PHOTO-2024-08-11-00-15-39 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-39 (2).jpg" },
+    { name: "Design Image (5).JPG", image: "./graphics/Design Image (5).JPG" },
+    { name: "PHOTO-2024-08-11-00-15-50.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-50.jpg" },
+    { name: "Design Image (26).JPG", image: "./graphics/Design Image (26).JPG" },
+    { name: "PHOTO-2024-08-11-00-15-45.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-45.jpg" },
+    { name: "PHOTO-2024-08-11-00-18-37 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-37 (1).jpg" },
+    { name: "PHOTO-2024-08-11-00-18-34 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-34 (1).jpg" },
+    { name: "Design Image (22).JPG", image: "./graphics/Design Image (22).JPG" },
+    { name: "PHOTO-2024-08-11-00-18-42 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-42 (1).jpg" },
+    { name: "Design Image (33).JPG", image: "./graphics/Design Image (33).JPG" },
+    { name: "PHOTO-2024-08-11-00-18-35 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-35 (1).jpg" },
+    { name: "PHOTO-2024-08-11-00-15-39.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-39.jpg" },
+    { name: "Design Image (19).JPG", image: "./graphics/Design Image (19).JPG" },
+    { name: "Design Image (17).JPG", image: "./graphics/Design Image (17).JPG" },
+    { name: "PHOTO-2024-08-11-00-18-38 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-38 (1).jpg" },
+    { name: "PHOTO-2024-08-11-00-15-48.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-48.jpg" },
+    { name: "PHOTO-2024-08-11-00-15-52.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-52.jpg" },
+    { name: "Design Image (1).JPG", image: "./graphics/Design Image (1).JPG" },
+    { name: "PHOTO-2024-08-11-00-18-36.jpg", image: "./graphics/PHOTO-2024-08-11-00-18-36.jpg" },
+    { name: "Design Image (25).JPG", image: "./graphics/Design Image (25).JPG" },
+    { name: "Design Image (7).JPG", image: "./graphics/Design Image (7).JPG" },
+    { name: "Design Image.JPG", image: "./graphics/Design Image.JPG" },
+    { name: "PHOTO-2024-08-11-00-15-51.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-51.jpg" },
+    { name: "Design Image (27).JPG", image: "./graphics/Design Image (27).JPG" },
+    { name: "Design Image (31).JPG", image: "./graphics/Design Image (31).JPG" },
+    { name: "Design Image (15).JPG", image: "./graphics/Design Image (15).JPG" },
+    { name: "PHOTO-2024-08-11-00-18-39 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-39 (1).jpg" },
+    { name: "PHOTO-2024-08-11-00-15-40 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-40 (1).jpg" },
+    { name: "Design Image (3).JPG", image: "./graphics/Design Image (3).JPG" },
+    { name: "Design Image (30).JPG", image: "./graphics/Design Image (30).JPG" },
+    { name: "Design Image (13).JPG", image: "./graphics/Design Image (13).JPG" },
+    { name: "Design Image (28).JPG", image: "./graphics/Design Image (28).JPG" },
+    { name: "PHOTO-2024-08-11-00-18-43 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-43 (2).jpg" },
+    { name: "PHOTO-2024-08-11-00-18-43 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-43 (1).jpg" },
+    { name: "Design Image (9).JPG", image: "./graphics/Design Image (9).JPG" },
+    { name: "PHOTO-2024-08-11-00-18-37 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-37 (1).jpg" },
+    { name: "Design Image (8).JPG", image: "./graphics/Design Image (8).JPG" },
+    { name: "PHOTO-2024-08-11-00-15-43.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-43.jpg" },
+    { name: "Design Image (35).JPG", image: "./graphics/Design Image (35).JPG" },
+    { name: "PHOTO-2024-08-11-00-15-46 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-46 (1).jpg" },
+    { name: "PHOTO-2024-08-11-00-18-38 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-38 (1).jpg" },
+    { name: "PHOTO-2024-08-11-00-15-47 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-47 (2).jpg" },
+    { name: "Design Image (14).JPG", image: "./graphics/Design Image (14).JPG" },
+    { name: "PHOTO-2024-08-11-00-15-36.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-36.jpg" },
+    { name: "PHOTO-2024-08-11-00-15-37 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-37 (1).jpg" },
+    { name: "Design Image (20).JPG", image: "./graphics/Design Image (20).JPG" },
+    { name: "Design Image (32).JPG", image: "./graphics/Design Image (32).JPG" },
+    { name: "Design Image (18).JPG", image: "./graphics/Design Image (18).JPG" },
+    { name: "PHOTO-2024-08-11-00-18-36.jpg", image: "./graphics/PHOTO-2024-08-11-00-18-36.jpg" },
+    { name: "PHOTO-2024-08-11-00-15-37.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-37.jpg" },
+    { name: "Design Image (11).JPG", image: "./graphics/Design Image (11).JPG" },
+    { name: "WhatsApp Image 2024-08-10 at 12.16.03 PM (1).jpeg", image: "./graphics/WhatsApp Image 2024-08-10 at 12.16.03 PM (1).jpeg" },
+    { name: "Design Image (2).JPG", image: "./graphics/Design Image (2).JPG" },
+    { name: "Design Image (24).JPG", image: "./graphics/Design Image (24).JPG" },
+    { name: "Design Image (34).JPG", image: "./graphics/Design Image (34).JPG" },
+    { name: "Design Image (16).JPG", image: "./graphics/Design Image (16).JPG" },
+    { name: "PHOTO-2024-08-11-00-15-45 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-45 (1).jpg" },
+    { name: "Design Image (6).JPG", image: "./graphics/Design Image (6).JPG" },
+    { name: "PHOTO-2024-08-11-00-15-39 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-39 (1).jpg" },
+    { name: "WhatsApp Image 2024-08-10 at 12.16.03 PM.jpeg", image: "./graphics/WhatsApp Image 2024-08-10 at 12.16.03 PM.jpeg" },
+    { name: "Design Image (4).JPG", image: "./graphics/Design Image (4).JPG" },
+    { name: "PHOTO-2024-08-11-00-18-43 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-43 (2).jpg" },
+    { name: "PHOTO-2024-08-11-00-15-41.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-41.jpg" },
+    { name: "PHOTO-2024-08-11-00-18-39 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-39 (2).jpg" },
+    { name: "Design Image (30).JPG", image: "./graphics/Design Image (30).JPG" },
+    { name: "Design Image (28).JPG", image: "./graphics/Design Image (28).JPG" },
+    { name: "PHOTO-2024-08-11-00-18-37 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-37 (1).jpg" },
+    { name: "Design Image (29).JPG", image: "./graphics/Design Image (29).JPG" },
+    { name: "PHOTO-2024-08-11-00-15-38 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-38 (1).jpg" },
+    { name: "PHOTO-2024-08-11-00-18-42 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-42 (1).jpg" },
+    { name: "Design Image (23).JPG", image: "./graphics/Design Image (23).JPG" },
+    { name: "PHOTO-2024-08-11-00-15-46 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-46 (1).jpg" },
+    { name: "PHOTO-2024-08-11-00-15-43.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-43.jpg" },
+    { name: "Design Image (10).JPG", image: "./graphics/Design Image (10).JPG" },
+    { name: "Design Image (14).JPG", image: "./graphics/Design Image (14).JPG" },
+    { name: "Design Image (20).JPG", image: "./graphics/Design Image (20).JPG" },
+    { name: "PHOTO-2024-08-11-00-15-49 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-49 (1).jpg" },
+    { name: "PHOTO-2024-08-11-00-15-52.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-52.jpg" },
+    { name: "Design Image (37).JPG", image: "./graphics/Design Image (37).JPG" },
+    { name: "Design Image (11).JPG", image: "./graphics/Design Image (11).JPG" }
+];
+
+    
+                arri.forEach(function(immu) {
+                    clutter += `
+                    
+                    <div class="box">
+                        <img class="cursor-pointer" src="${immu.image}" alt="${immu.name}">
+                        <div class="caption">Lorem ipsum</div>
+                    </div>`;
+                });
+    
+                var container = document.querySelector(".containeri2");
+                if (container) {
+                    container.innerHTML = clutter;
+                    container.style.padding = "40px";
+                } else {
+                    
+                }
+            }
+    
+            addingImages2(); // Call the function here
+        });
+    </script>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>

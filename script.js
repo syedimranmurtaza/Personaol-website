@@ -194,6 +194,10 @@ function colorChanging() {
                 headerContent.style.color = '#ffffff';
                 header.style.opacity = 1;
                 break;
+            case 'screenshow':
+                header.style.backgroundColor = '#181818';
+                headerContent.style.color = '#ffffff';
+                break;
             default:
                 header.style.backgroundColor = '';
                 headerContent.style.color = '';
