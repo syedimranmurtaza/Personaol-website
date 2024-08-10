@@ -9,25 +9,11 @@ body[theme="black"] {
 
 
 
-body #loader {
-    /* Ensure no global styles override the loader styles */
-    background: -webkit-radial-gradient(#222922, #000500);
-  background: radial-gradient(#222922, #000500);
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 400;
-  overflow: hidden;
-  padding: 30px 0 0 30px;
-  text-align: center;
-}
 
+body .preloader-2 {
 
-
-#loader html,
-#loader body {
-    height: 100%;
-    margin: 0; /* Reset margin */
-}
-
+    background: #000;
+  }
 
 
 

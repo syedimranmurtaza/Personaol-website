@@ -790,30 +790,57 @@
    </div>
 
 
-     <!-- Loader -->
-     <div id="loader" class="loader z-[1000000000000000000000]">
-        <div class="word">LOADING...</div>
-        <div class="overlay"></div>
-    </div>
 
-    <!-- JavaScript to hide the loader -->
-    <script>
-        window.addEventListener('load', function() {
+
+<!-- Loader -->
+<div id="loader" class="preloader-2">
+    <span class="line line-1"></span>
+    <span class="line line-2"></span>
+    <span class="line line-3"></span>
+    <span class="line line-4"></span>
+    <span class="line line-5"></span>
+    <span class="line line-6"></span>
+    <span class="line line-7"></span>
+    <span class="line line-8"></span>
+    <span class="line line-9"></span>
+    <div>THORA SABAR KARO</div>
+</div>
+
+<!-- Main Content -->
+<div id="main-content" style="display: none;">
+    <!-- Your main content here -->
+</div>
+
+<!-- JavaScript to handle loader and content visibility -->
+<script>
+    window.addEventListener('load', function() {
+        // Simulate a loading delay (e.g., 2 minutes)
+        setTimeout(function() {
             var loader = document.getElementById('loader');
+            var mainContent = document.getElementById('main-content');
+            
             if (loader) {
-                loader.style.display = 'none';
+                loader.style.display = 'none'; // Hide the loader
             }
-        });
-    </script>
+            
+            if (mainContent) {
+                mainContent.style.display = 'block'; // Show the main content
+            }
+        },); // 120,000 milliseconds = 2 minutes
+    });
+</script>
 
-    <!-- Other JavaScript libraries -->
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'></script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
     <script src="script.js"></script> 
-    <script src="laoder.js"></script>
+   
 
 
     

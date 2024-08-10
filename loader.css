@@ -1,34 +1,58 @@
-/* loader.css */
-
-
-
-#loader {
-    position: fixed; /* Fixes the loader relative to the viewport */
+.preloader-2 {
+    position: fixed; /* Fixes the loader position on the screen */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.9); /* High opacity background */
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     display: flex;
+    
     justify-content: center;
     align-items: center;
-    z-index: 99999999999999999; /* Ensure it's on top of all other content */
+    z-index: 99909999; /* Sufficiently high z-index */
 }
 
-#loader .word {
-    color: #333; /* Dark text for contrast */
-    font-size: 2.5em;
-    font-weight: bold;
-    text-shadow: 0 0 10px rgba(50, 255, 50, 0.7), 0 0 5px rgba(100, 255, 100, 0.7); /* Text shadow for visibility */
-    position: relative; /* Proper positioning within the loader */
+.preloader-2 div {
+    color: #fff;
+    margin: 5px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px; /* Adjust font size for better visibility */
+    letter-spacing: 2px;
+    margin-left: 10px;
 }
 
-#loader .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
-    z-index: -1; /* Behind the text */
+.preloader-2 .line {
+    width: 1px;
+    height: 12px;
+    background: #fff;
+    margin: 0 1px;
+    display: inline-block;
+    animation: opacity-2 1000ms infinite ease-in-out;
+}
+
+/* Specific line animation delays */
+.preloader-2 .line-1 { animation-delay: 800ms; }
+.preloader-2 .line-2 { animation-delay: 600ms; }
+.preloader-2 .line-3 { animation-delay: 400ms; }
+.preloader-2 .line-4 { animation-delay: 200ms; }
+.preloader-2 .line-6 { animation-delay: 200ms; }
+.preloader-2 .line-7 { animation-delay: 400ms; }
+.preloader-2 .line-8 { animation-delay: 600ms; }
+.preloader-2 .line-9 { animation-delay: 800ms; }
+
+@keyframes opacity-2 { 
+    0% { 
+        opacity: 1;
+        height: 15px;
+    }
+    50% { 
+        opacity: 0;
+        height: 12px;
+    }
+    100% { 
+        opacity: 1;
+        height: 15px;
+    }  
 }
