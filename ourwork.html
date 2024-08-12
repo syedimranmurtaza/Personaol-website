@@ -1,285 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What We Can Do!s</title>
+    <link rel="stylesheet" href="loader.css"> 
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <style>
-        body{
-            background-color:#111111;
+        body {
+            background-color: #111111;
         }
     </style>
 </head>
+
 <body theme="black">
-    <div class="main">
+
+    <div id="loader" class="preloader-2">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+        <span class="line line-4"></span>
+        <span class="line line-5"></span>
+        <span class="line line-6"></span>
+        <span class="line line-7"></span>
+        <span class="line line-8"></span>
+        <span class="line line-9"></span>
+        <div class="text-white">WHAT WE CAN DO!</div>
+    </div>
+    
+
+    <div id="main-content" style="display: none;">
+        <div class="main">
 
 
-        <div id="header" class="header2 fixed z-[10000] bg-[#181818] opacity-100">
-            <div id="header-content">
-                <div class="logo section text-white ">
-                    DEVELOPER'S EMPIRE
-                </div>
-                <div id="btns" class="section">
-                    <button class="section font-[myfont] text-white ">Contact Us</button>
-                    <button class="section font-[myfont] text-white ">Our Projects</button>
-                    <button class="section font-[myfont] text-white ">Github</button>
-                    <button id="founderbtn" class=" extra section font-[myfont] text-white">Founder</button>
-                </div>
-            </div>
-        </div>
 
 
-
-       <div class="start w-full h-full bg-[#111111]">
-        
-        <div class="starting w-full h-screen  pt-[100px] bg-[#111111] relative">
-            <div id="con" class=" absolute con w-full pt-[100px] bg-[#111111] flex flex-col justify-center items-center">
-                
-                <div class="h pt-[50px] text-center">
-                    <h1 class="font-[myfont2] text-7xl text-white">What Are You Interested In?</h1>
-                    <h2 class="font-[myfont2] text-3xl text-white pt-5">We’ll direct you to exactly what you’re looking for.</h2>
-                </div>
-                <div class="pb-[185px] wbtns flex justify-center items-center absolute top-[360px] gap-5">
-                    <div id="testbutton" class="webbutton" data-content="WEBSITES WORK"></div>
-<div id="testbutton" class="graphicsbutton" data-content="GRAPHICS DESIGN"></div>
-<div id="testbutton" class="dsabutton" data-content="DSA THINGS"></div>
-
-
+            <div id="header" class="header2 fixed z-[10000] bg-[#181818] opacity-100">
+                <div id="header-content">
+                    <div class="logo section">
+                        <a href="https://developersempire.com" style="color: white; text-decoration: none;">DEVELOPER'S
+                            EMPIRE</a>
+    
+                    </div>
+    
+                    <div id="btns" class="section">
+                        <button class="section font-[myfont] text-white"
+                            onclick="window.location.href='contact.html';">Contact Us</button>
+    
+                        <button class="section font-[myfont] text-white" onclick="window.location.href='ourwork.html';">What
+                            We Can Do! </button>
+                        <button class="section font-[myfont] text-white"
+                            onclick="window.open('https://github.com/syedimranmurtaza', '_blank');">Github</button>
+    
+                        <button id="founderbtn" class="extra section font-[myfont] text-white"
+                            onclick="window.location.href='https://connectwithnaqvi.com';">Founder</button>
+    
+                    </div>
                 </div>
             </div>
     
-            <div id="webpart" class="absolute webpart w-full pt-[100px] bg-[#111111] hidden  flex flex-col justify-center items-center opacity-0">
-                <video id="webpart-video" class="w-[50%] " src="./videos/webpart1.MOV"></video>
-                <h3 class="absolute top-[480px] left-[50px] font-[myfont] w-[14rem] text-white">Refresh the page; press <span  class="text-yellow-500">Ctrl+R</span> to start the experience again.</h3>
-            </div>
-
-            <div id="graphicspart" class="z-[1000] absolute w-full pt-[70px] bg-[#111111]  flex flex-col justify-center items-center hidden opacity-0">    
-                <video id="graphicspart-video" class="w-[70%] " src="./videos/graphy.MOV"></video>
-                <h3 class="absolute top-[480px] left-[50px] font-[myfont] w-[14rem] text-white">Refresh the page; press <span  class="text-yellow-500">Ctrl+R</span> to start the experience again.</h3>
-            </div>
-
-            <div id="dsapart" class="z-[1000] absolute w-full pt-[100px] bg-[#111111]  flex flex-col justify-center items-center hidden opacity-0">    
-
-                <h1 class="flex justify-center items-center font-[myfont] absolute top-[200px] text-white text-7xl">COMING <span class="bg-[#B0803C] tracking-[2px] ">SOON!</span></h1>
-
-                <h3 class="absolute top-[480px] left-[50px] font-[myfont] w-[14rem] text-white">Refresh the page; press <span  class="text-yellow-500">Ctrl+R</span> to start the experience again.</h3>
-            </div>
-            
-
-
-        
-        </div>
-
-       
-        <!-- <div id="webcontent" class="webcontent w-full h-[5000px] bg-[#111111]  opacity-1 transition-opacity duration-1000">
-            <div class="imii flex ">
-                <img class="w-full h-full" src="./images/screencapture-kitpapa-net-kickerz-2024-08-01-17_48_58.png" alt="">
-                <img class="w-full h-full" src="./images/screencapture-kitpapa-net-kickerz-2024-08-01-17_48_58.png" alt="">
-                <img class="w-full h-full" src="./images/screencapture-kitpapa-net-press-2024-08-01-17_44_22.png" alt="">
-                <img class="w-full h-full" src="./images/WhatsApp Image 2024-08-08 at 12.29.36 PM.jpeg" alt="">
-            </div>
-        </div> -->
-
-        <div id="graphicscontent" class="z-[100000] posts hidden opacity-0 transition-opacity duration-1000">
-            
-            <div class="overlay hidden fixed w-full h-screen bg-black/80"></div>   
-            <div class="content">
-                
-                
-                <div class="containeri2">
-                    
-                    <!-- the real container where we have to add js -->
-                </div>
-                
-                
-            </div>
-        </div>
-
-
-
-        <div id="webcontent" class="posts hidden  opacity-0 transition-opacity duration-1000">
-            
-            <div class="overlay hidden fixed w-full h-screen bg-black/80"></div>   
-            <div class="content">
-                <div class="containeri">
-                    <!-- the real container where we have to add js -->
-                </div>
-            </div>
-        </div>
-
-        
-
-
-
-
-
-       </div>
-
-
-
-        
-
-
-
-
-
-
-        <div data-color="footer" class="section footer h-[100vh] w-full bg-black relative">
-            <div class="container">
-                <div id="firstpart" class="fistparti text-white flex justify-between items-center cursor-pointer">
-                    <div class="sec1 text-white ">
-                        <h2 class="text-white">Solutions</h2>
-                        <h2>Insurance Solutions</h2>
-                    </div>
-                    <div class="sec2">
-                        <h2>Lorem, ipsum.</h2>
-                        <h2>Lorem.</h2>
-                        <h2>News</h2>
-                        
-                    </div>
-                    <div class="sec3">
-                        <h2>Lorem, ipsum.</h2>
-                        <h2>Lorem.</h2>
-                        <h2>News</h2>
-                        <h2>Resources</h2>
-                    </div>
-                    <div class="sec4">
-                        <button id="btn4" class="bg-[#B0803C]  text-white ">Contact Us</button>
-                        <h2>News</h2>
-                        <h2>Resources</h2>
-                    </div>
-                </div>
-        
-                <div class="z-[1] middlepart absolute top-[30%] left-1/2 -translate-x-1/2 w-[25%] h-[25%]">
-                    <img src="https://developersempire.com/wp-content/uploads/2024/02/IMG_1409-e1708451110285-1321x1536.png" alt="">
-                </div>
-        
-                <div class="z-[10000000] bg-black lastpart object-center border-t-2 border-gray-500 left-1/2 -translate-x-1/2 w-[90%] h-[30%] absolute top-[70%]">
-                    <div class="immi flex justify-between items-center text-white font-[myfont2] pt-10">
-                        <div class="cursor-pointer seos flex justify-center items-center gap-10 underline underline-offset-4 decoration-gray-500">
-                            <h3>Privacy Policy</h3>
-                            <h3>Terms of Use</h3>
-                            <h3>Cookies</h3>
+    
+    
+            <div class="start w-full h-full bg-[#111111]">
+    
+                <div class="starting w-full h-screen  pt-[100px] bg-[#111111] relative">
+                    <div id="con"
+                        class=" absolute con w-full pt-[100px] bg-[#111111] flex flex-col justify-center items-center">
+    
+                        <div class="h pt-[50px] text-center">
+                            <h1 class="font-[myfont2] text-7xl text-white">What Are You Interested In?</h1>
+                            <h2 class="font-[myfont2] text-3xl text-white pt-5">We’ll direct you to exactly what you’re
+                                looking for.</h2>
                         </div>
-                        <div class="copyright text-1xl pr-[170px]">
-                            © 2024 Developer's Empire. All rights reserved.
+                        <div class="pb-[185px] wbtns flex justify-center items-center absolute top-[360px] gap-5">
+                            <div id="testbutton" class="webbutton" data-content="WEBSITES WORK"></div>
+                            <div id="testbutton" class="graphicsbutton" data-content="GRAPHICS DESIGN"></div>
+                            <div id="testbutton" class="dsabutton" data-content="DSA THINGS"></div>
+    
+    
                         </div>
-                        <div class="socials text-2xl cursor-pointer">
-                            <i class="ri-facebook-box-fill"></i>
-                            <i class="ri-instagram-fill"></i>
-                            <i class="ri-github-fill"></i>
+                    </div>
+    
+                    <div id="webpart"
+                        class="absolute webpart w-full pt-[100px] bg-[#111111] hidden  flex flex-col justify-center items-center opacity-0">
+                        <video id="webpart-video" class="w-[50%] " src="./videos/webpart1.MOV"></video>
+                        <h3 class="absolute top-[480px] left-[50px] font-[myfont] w-[14rem] text-white">Refresh the page;
+                            press <span class="text-yellow-500">Ctrl+R</span> to start the experience again.</h3>
+                    </div>
+    
+                    <div id="graphicspart"
+                        class="z-[1000] absolute w-full pt-[70px] bg-[#111111]  flex flex-col justify-center items-center hidden opacity-0">
+                        <video id="graphicspart-video" class="w-[70%] " src="./videos/graphy.MOV"></video>
+                        <h3 class="absolute top-[480px] left-[50px] font-[myfont] w-[14rem] text-white">Refresh the page;
+                            press <span class="text-yellow-500">Ctrl+R</span> to start the experience again.</h3>
+                    </div>
+    
+                    <div id="dsapart"
+                        class="z-[1000] absolute w-full pt-[100px] bg-[#111111]  flex flex-col justify-center items-center hidden opacity-0">
+    
+                        <h1 class="flex justify-center items-center font-[myfont] absolute top-[200px] text-white text-7xl">
+                            COMING <span class="bg-[#B0803C] tracking-[2px] ">SOON!</span></h1>
+    
+                        <h3 class="absolute top-[480px] left-[50px] font-[myfont] w-[14rem] text-white">Refresh the page;
+                            press <span class="text-yellow-500">Ctrl+R</span> to start the experience again.</h3>
+                    </div>
+    
+    
+    
+    
+                </div>
+    
+    
+                <!-- <div id="webcontent" class="webcontent w-full h-[5000px] bg-[#111111]  opacity-1 transition-opacity duration-1000">
+                <div class="imii flex ">
+                    <img class="w-full h-full" src="./images/screencapture-kitpapa-net-kickerz-2024-08-01-17_48_58.png" alt="">
+                    <img class="w-full h-full" src="./images/screencapture-kitpapa-net-kickerz-2024-08-01-17_48_58.png" alt="">
+                    <img class="w-full h-full" src="./images/screencapture-kitpapa-net-press-2024-08-01-17_44_22.png" alt="">
+                    <img class="w-full h-full" src="./images/WhatsApp Image 2024-08-08 at 12.29.36 PM.jpeg" alt="">
+                </div>
+            </div> -->
+    
+                <div id="graphicscontent" class="z-[100000] posts hidden opacity-0 transition-opacity duration-1000">
+    
+                    <div class="overlay hidden fixed w-full h-screen bg-black/80"></div>
+                    <div class="content">
+    
+    
+                        <div class="containeri2">
+    
+                            <!-- the real container where we have to add js -->
+                        </div>
+    
+    
+                    </div>
+                </div>
+    
+    
+    
+                <div id="webcontent" class="posts hidden  opacity-0 transition-opacity duration-1000">
+    
+                    <div class="overlay hidden fixed w-full h-screen bg-black/80"></div>
+                    <div class="content">
+                        <div class="containeri">
+                            <!-- the real container where we have to add js -->
                         </div>
                     </div>
                 </div>
+    
+    
+    
+    
+    
+    
+    
             </div>
+    
+    
+    
+    
+    
+            <div data-color="footer" class="section footer h-[100vh] w-full bg-black relative">
+                <div class="container">
+                    <div id="firstpart" class="fistparti text-white flex justify-between items-start">
+                        <div class="sec1 text-white cursor-default">
+                            <h2 class="text-white ">Dreams become reality.</h2>
+                            <h2>Believe in yourself.</h2>
+                        </div>
+                        <div class="sec2">
+                            <a href="https://youtu.be/PCr65iD8Id4?si=3Ez31cN7qK4zcHjv" target="_blank"
+                                rel="noopener noreferrer">Wolf Queen and Cubs</a>
+    
+                            <a href="https://www.wrappinchicken.com" target="_blank" rel="noopener noreferrer">Restaurant
+                                Website</a>
+    
+                            <h2></h2>
+    
+                        </div>
+                        <div class="sec3">
+                            <a href="https://www.universityofahlulbayt.com" target="_blank"
+                                rel="noopener noreferrer">Discussion Website</a>
+    
+                            <a href="https://www.miramirali.com" target="_blank" rel="noopener noreferrer">Portfolio
+                                Website</a>
+    
+                            <a href="https://developersempire.com/ourwork.html" target="_blank"
+                                rel="noopener noreferrer">Graphics</a>
+    
+    
+                        </div>
+                        <div class="sec4">
+                            <button id="btn4" class="bg-[#B0803C]  text-white ">Contact Us</button>
+    
+                        </div>
+                    </div>
+    
+                    <div class="z-[1] middlepart absolute top-[30%] left-1/2 -translate-x-1/2 w-[30%] h-[30%]">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+    
+                    <div
+                        class="z-[10000000] bg-black lastpart object-center border-t-2 border-gray-500 left-1/2 -translate-x-1/2 w-[90%] h-[30%] absolute top-[70%]">
+                        <div class="immi flex justify-between items-center text-white font-[myfont2] pt-10">
+                            <div
+                                class="cursor-pointer seos flex justify-center items-center gap-10 underline underline-offset-4 decoration-gray-500">
+                                <a href="privacypolicy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+    
+                                <a href="cookies.html" target="_blank" rel="noopener noreferrer">Cookies</a>
+    
+                            </div>
+                            <div class="copyright text-1xl pr-[1px]">
+                                © 2024 Developer's Empire. All rights reserved.
+                            </div>
+                            <div class="socials text-2xl cursor-pointer">
+                                <button class="section font-[myfont] text-white"
+                                    onclick="window.open('https://www.instagram.com/naqvii05', '_blank');">
+                                    <i class="ri-instagram-fill"></i>
+                                </button>
+    
+                                <button class="section font-[myfont] text-white"
+                                    onclick="window.open('https://www.instagram.com/developers.empire', '_blank');">
+                                    <i class="ri-instagram-fill"></i>
+                                </button>
+                                <button class="section font-[myfont] text-white"
+                                    onclick="window.open('https://github.com/syedimranmurtaza', '_blank');">
+                                    <i class="ri-github-fill"></i> Github
+                                </button>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+    
         </div>
-
-
-       
-
     </div>
 
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            
-    
-            function addingImages2() {
-              
-                var clutter = "";
-    
-                // Ensure arri is defined and has the expected structure
-                var arri = [
-    { name: "PHOTO-2024-08-11-00-18-35.jpg", image: "./graphics/PHOTO-2024-08-11-00-18-35.jpg" },
-    { name: "Design Image (12).JPG", image: "./graphics/Design Image (12).JPG" },
-    { name: "PHOTO-2024-08-11-00-15-39 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-39 (2).jpg" },
-    { name: "Design Image (5).JPG", image: "./graphics/Design Image (5).JPG" },
-    { name: "PHOTO-2024-08-11-00-15-50.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-50.jpg" },
-    { name: "Design Image (26).JPG", image: "./graphics/Design Image (26).JPG" },
-    { name: "PHOTO-2024-08-11-00-15-45.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-45.jpg" },
-    { name: "PHOTO-2024-08-11-00-18-37 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-37 (1).jpg" },
-    { name: "PHOTO-2024-08-11-00-18-34 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-34 (1).jpg" },
-    { name: "Design Image (22).JPG", image: "./graphics/Design Image (22).JPG" },
-    { name: "PHOTO-2024-08-11-00-18-42 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-42 (1).jpg" },
-    { name: "Design Image (33).JPG", image: "./graphics/Design Image (33).JPG" },
-    { name: "PHOTO-2024-08-11-00-18-35 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-35 (1).jpg" },
-    { name: "PHOTO-2024-08-11-00-15-39.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-39.jpg" },
-    { name: "Design Image (19).JPG", image: "./graphics/Design Image (19).JPG" },
-    { name: "Design Image (17).JPG", image: "./graphics/Design Image (17).JPG" },
-    { name: "PHOTO-2024-08-11-00-18-38 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-38 (1).jpg" },
-    { name: "PHOTO-2024-08-11-00-15-48.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-48.jpg" },
-    { name: "PHOTO-2024-08-11-00-15-52.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-52.jpg" },
-    { name: "Design Image (1).JPG", image: "./graphics/Design Image (1).JPG" },
-    { name: "PHOTO-2024-08-11-00-18-36.jpg", image: "./graphics/PHOTO-2024-08-11-00-18-36.jpg" },
-    { name: "Design Image (25).JPG", image: "./graphics/Design Image (25).JPG" },
-    { name: "Design Image (7).JPG", image: "./graphics/Design Image (7).JPG" },
-    { name: "Design Image.JPG", image: "./graphics/Design Image.JPG" },
-    { name: "PHOTO-2024-08-11-00-15-51.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-51.jpg" },
-    { name: "Design Image (27).JPG", image: "./graphics/Design Image (27).JPG" },
-    { name: "Design Image (31).JPG", image: "./graphics/Design Image (31).JPG" },
-    { name: "Design Image (15).JPG", image: "./graphics/Design Image (15).JPG" },
-    { name: "PHOTO-2024-08-11-00-18-39 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-39 (1).jpg" },
-    { name: "PHOTO-2024-08-11-00-15-40 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-40 (1).jpg" },
-    { name: "Design Image (3).JPG", image: "./graphics/Design Image (3).JPG" },
-    { name: "Design Image (30).JPG", image: "./graphics/Design Image (30).JPG" },
-    { name: "Design Image (13).JPG", image: "./graphics/Design Image (13).JPG" },
-    { name: "Design Image (28).JPG", image: "./graphics/Design Image (28).JPG" },
-    { name: "PHOTO-2024-08-11-00-18-43 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-43 (2).jpg" },
-    { name: "PHOTO-2024-08-11-00-18-43 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-43 (1).jpg" },
-    { name: "Design Image (9).JPG", image: "./graphics/Design Image (9).JPG" },
-    { name: "PHOTO-2024-08-11-00-18-37 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-37 (1).jpg" },
-    { name: "Design Image (8).JPG", image: "./graphics/Design Image (8).JPG" },
-    { name: "PHOTO-2024-08-11-00-15-43.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-43.jpg" },
-    { name: "Design Image (35).JPG", image: "./graphics/Design Image (35).JPG" },
-    { name: "PHOTO-2024-08-11-00-15-46 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-46 (1).jpg" },
-    { name: "PHOTO-2024-08-11-00-18-38 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-38 (1).jpg" },
-    { name: "PHOTO-2024-08-11-00-15-47 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-47 (2).jpg" },
-    { name: "Design Image (14).JPG", image: "./graphics/Design Image (14).JPG" },
-    { name: "PHOTO-2024-08-11-00-15-36.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-36.jpg" },
-    { name: "PHOTO-2024-08-11-00-15-37 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-37 (1).jpg" },
-    { name: "Design Image (20).JPG", image: "./graphics/Design Image (20).JPG" },
-    { name: "Design Image (32).JPG", image: "./graphics/Design Image (32).JPG" },
-    { name: "Design Image (18).JPG", image: "./graphics/Design Image (18).JPG" },
-    { name: "PHOTO-2024-08-11-00-18-36.jpg", image: "./graphics/PHOTO-2024-08-11-00-18-36.jpg" },
-    { name: "PHOTO-2024-08-11-00-15-37.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-37.jpg" },
-    { name: "Design Image (11).JPG", image: "./graphics/Design Image (11).JPG" },
-    { name: "WhatsApp Image 2024-08-10 at 12.16.03 PM (1).jpeg", image: "./graphics/WhatsApp Image 2024-08-10 at 12.16.03 PM (1).jpeg" },
-    { name: "Design Image (2).JPG", image: "./graphics/Design Image (2).JPG" },
-    { name: "Design Image (24).JPG", image: "./graphics/Design Image (24).JPG" },
-    { name: "Design Image (34).JPG", image: "./graphics/Design Image (34).JPG" },
-    { name: "Design Image (16).JPG", image: "./graphics/Design Image (16).JPG" },
-    { name: "PHOTO-2024-08-11-00-15-45 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-45 (1).jpg" },
-    { name: "Design Image (6).JPG", image: "./graphics/Design Image (6).JPG" },
-    { name: "PHOTO-2024-08-11-00-15-39 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-39 (1).jpg" },
-    { name: "WhatsApp Image 2024-08-10 at 12.16.03 PM.jpeg", image: "./graphics/WhatsApp Image 2024-08-10 at 12.16.03 PM.jpeg" },
-    { name: "Design Image (4).JPG", image: "./graphics/Design Image (4).JPG" },
-    { name: "PHOTO-2024-08-11-00-18-43 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-43 (2).jpg" },
-    { name: "PHOTO-2024-08-11-00-15-41.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-41.jpg" },
-    { name: "PHOTO-2024-08-11-00-18-39 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-39 (2).jpg" },
-    { name: "Design Image (30).JPG", image: "./graphics/Design Image (30).JPG" },
-    { name: "Design Image (28).JPG", image: "./graphics/Design Image (28).JPG" },
-    { name: "PHOTO-2024-08-11-00-18-37 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-37 (1).jpg" },
-    { name: "Design Image (29).JPG", image: "./graphics/Design Image (29).JPG" },
-    { name: "PHOTO-2024-08-11-00-15-38 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-38 (1).jpg" },
-    { name: "PHOTO-2024-08-11-00-18-42 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-42 (1).jpg" },
-    { name: "Design Image (23).JPG", image: "./graphics/Design Image (23).JPG" },
-    { name: "PHOTO-2024-08-11-00-15-46 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-46 (1).jpg" },
-    { name: "PHOTO-2024-08-11-00-15-43.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-43.jpg" },
-    { name: "Design Image (10).JPG", image: "./graphics/Design Image (10).JPG" },
-    { name: "Design Image (14).JPG", image: "./graphics/Design Image (14).JPG" },
-    { name: "Design Image (20).JPG", image: "./graphics/Design Image (20).JPG" },
-    { name: "PHOTO-2024-08-11-00-15-49 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-49 (1).jpg" },
-    { name: "PHOTO-2024-08-11-00-15-52.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-52.jpg" },
-    { name: "Design Image (37).JPG", image: "./graphics/Design Image (37).JPG" },
-    { name: "Design Image (11).JPG", image: "./graphics/Design Image (11).JPG" }
-];
+
+
+
+
 
     
-                arri.forEach(function(immu) {
+<!-- Loader Script -->
+<!-- Loader Script -->
+<script>
+    window.addEventListener('load', function () {
+        console.log('Window loaded'); // Debugging line
+
+        var loader = document.getElementById('loader');
+        var mainContent = document.getElementById('main-content');
+
+        if (loader) {
+            console.log('Hiding loader'); // Debugging line
+            loader.style.display = 'none'; // Hide the loader immediately
+        } else {
+            console.log('Loader not found'); // Debugging line
+        }
+
+        if (mainContent) {
+            console.log('Showing main content'); // Debugging line
+            mainContent.style.display = 'block'; // Show the main content
+        } else {
+            console.log('Main content not found'); // Debugging line
+        }
+    });
+</script>
+
+
+
+    <script>
+         window.addEventListener('load', function () {
+        console.log('Window loaded'); // Debugging line
+
+        var loader = document.getElementById('loader');
+        var mainContent = document.getElementById('main-content');
+
+        if (loader) {
+            console.log('Hiding loader'); // Debugging line
+            loader.style.display = 'none'; // Hide the loader immediately
+        } else {
+            console.log('Loader not found'); // Debugging line
+        }
+
+        if (mainContent) {
+            console.log('Showing main content'); // Debugging line
+            mainContent.style.display = 'block'; // Show the main content
+        } else {
+            console.log('Main content not found'); // Debugging line
+        }
+    });
+
+    
+        document.addEventListener('DOMContentLoaded', function () {
+
+
+            function addingImages2() {
+
+                var clutter = "";
+
+                // Ensure arri is defined and has the expected structure
+                var arri = [
+                    { name: "PHOTO-2024-08-11-00-18-35.jpg", image: "./graphics/PHOTO-2024-08-11-00-18-35.jpg" },
+                    { name: "Design Image (12).JPG", image: "./graphics/Design Image (12).JPG" },
+                    { name: "PHOTO-2024-08-11-00-15-39 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-39 (2).jpg" },
+                    { name: "Design Image (5).JPG", image: "./graphics/Design Image (5).JPG" },
+                    { name: "PHOTO-2024-08-11-00-15-50.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-50.jpg" },
+                    { name: "Design Image (26).JPG", image: "./graphics/Design Image (26).JPG" },
+                    { name: "PHOTO-2024-08-11-00-15-45.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-45.jpg" },
+                    { name: "PHOTO-2024-08-11-00-18-37 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-37 (1).jpg" },
+                    { name: "PHOTO-2024-08-11-00-18-34 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-34 (1).jpg" },
+                    { name: "Design Image (22).JPG", image: "./graphics/Design Image (22).JPG" },
+                    { name: "PHOTO-2024-08-11-00-18-42 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-42 (1).jpg" },
+                    { name: "Design Image (33).JPG", image: "./graphics/Design Image (33).JPG" },
+                    { name: "PHOTO-2024-08-11-00-18-35 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-35 (1).jpg" },
+                    { name: "PHOTO-2024-08-11-00-15-39.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-39.jpg" },
+                    { name: "Design Image (19).JPG", image: "./graphics/Design Image (19).JPG" },
+                    { name: "Design Image (17).JPG", image: "./graphics/Design Image (17).JPG" },
+                    { name: "PHOTO-2024-08-11-00-18-38 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-38 (1).jpg" },
+                    { name: "PHOTO-2024-08-11-00-15-48.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-48.jpg" },
+                    { name: "PHOTO-2024-08-11-00-15-52.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-52.jpg" },
+                    { name: "Design Image (1).JPG", image: "./graphics/Design Image (1).JPG" },
+                    { name: "PHOTO-2024-08-11-00-18-36.jpg", image: "./graphics/PHOTO-2024-08-11-00-18-36.jpg" },
+                    { name: "Design Image (25).JPG", image: "./graphics/Design Image (25).JPG" },
+                    { name: "Design Image (7).JPG", image: "./graphics/Design Image (7).JPG" },
+                    { name: "Design Image.JPG", image: "./graphics/Design Image.JPG" },
+                    { name: "PHOTO-2024-08-11-00-15-51.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-51.jpg" },
+                    { name: "Design Image (27).JPG", image: "./graphics/Design Image (27).JPG" },
+                    { name: "Design Image (31).JPG", image: "./graphics/Design Image (31).JPG" },
+                    { name: "Design Image (15).JPG", image: "./graphics/Design Image (15).JPG" },
+                    { name: "PHOTO-2024-08-11-00-18-39 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-39 (1).jpg" },
+                    { name: "PHOTO-2024-08-11-00-15-40 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-40 (1).jpg" },
+                    { name: "Design Image (3).JPG", image: "./graphics/Design Image (3).JPG" },
+                    { name: "Design Image (30).JPG", image: "./graphics/Design Image (30).JPG" },
+                    { name: "Design Image (13).JPG", image: "./graphics/Design Image (13).JPG" },
+                    { name: "Design Image (28).JPG", image: "./graphics/Design Image (28).JPG" },
+                    { name: "PHOTO-2024-08-11-00-18-43 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-43 (2).jpg" },
+                    { name: "PHOTO-2024-08-11-00-18-43 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-43 (1).jpg" },
+                    { name: "Design Image (9).JPG", image: "./graphics/Design Image (9).JPG" },
+                    { name: "PHOTO-2024-08-11-00-18-37 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-37 (1).jpg" },
+                    { name: "Design Image (8).JPG", image: "./graphics/Design Image (8).JPG" },
+                    { name: "PHOTO-2024-08-11-00-15-43.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-43.jpg" },
+                    { name: "Design Image (35).JPG", image: "./graphics/Design Image (35).JPG" },
+                    { name: "PHOTO-2024-08-11-00-15-46 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-46 (1).jpg" },
+                    { name: "PHOTO-2024-08-11-00-18-38 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-38 (1).jpg" },
+                    { name: "PHOTO-2024-08-11-00-15-47 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-47 (2).jpg" },
+                    { name: "Design Image (14).JPG", image: "./graphics/Design Image (14).JPG" },
+                    { name: "PHOTO-2024-08-11-00-15-36.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-36.jpg" },
+                    { name: "PHOTO-2024-08-11-00-15-37 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-37 (1).jpg" },
+                    { name: "Design Image (20).JPG", image: "./graphics/Design Image (20).JPG" },
+                    { name: "Design Image (32).JPG", image: "./graphics/Design Image (32).JPG" },
+                    { name: "Design Image (18).JPG", image: "./graphics/Design Image (18).JPG" },
+                    { name: "PHOTO-2024-08-11-00-18-36.jpg", image: "./graphics/PHOTO-2024-08-11-00-18-36.jpg" },
+                    { name: "PHOTO-2024-08-11-00-15-37.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-37.jpg" },
+                    { name: "Design Image (11).JPG", image: "./graphics/Design Image (11).JPG" },
+                    { name: "WhatsApp Image 2024-08-10 at 12.16.03 PM (1).jpeg", image: "./graphics/WhatsApp Image 2024-08-10 at 12.16.03 PM (1).jpeg" },
+                    { name: "Design Image (2).JPG", image: "./graphics/Design Image (2).JPG" },
+                    { name: "Design Image (24).JPG", image: "./graphics/Design Image (24).JPG" },
+                    { name: "Design Image (34).JPG", image: "./graphics/Design Image (34).JPG" },
+                    { name: "Design Image (16).JPG", image: "./graphics/Design Image (16).JPG" },
+                    { name: "PHOTO-2024-08-11-00-15-45 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-45 (1).jpg" },
+                    { name: "Design Image (6).JPG", image: "./graphics/Design Image (6).JPG" },
+                    { name: "PHOTO-2024-08-11-00-15-39 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-39 (1).jpg" },
+                    { name: "WhatsApp Image 2024-08-10 at 12.16.03 PM.jpeg", image: "./graphics/WhatsApp Image 2024-08-10 at 12.16.03 PM.jpeg" },
+                    { name: "Design Image (4).JPG", image: "./graphics/Design Image (4).JPG" },
+                    { name: "PHOTO-2024-08-11-00-18-43 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-43 (2).jpg" },
+                    { name: "PHOTO-2024-08-11-00-15-41.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-41.jpg" },
+                    { name: "PHOTO-2024-08-11-00-18-39 (2).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-39 (2).jpg" },
+                    { name: "Design Image (30).JPG", image: "./graphics/Design Image (30).JPG" },
+                    { name: "Design Image (28).JPG", image: "./graphics/Design Image (28).JPG" },
+                    { name: "PHOTO-2024-08-11-00-18-37 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-37 (1).jpg" },
+                    { name: "Design Image (29).JPG", image: "./graphics/Design Image (29).JPG" },
+                    { name: "PHOTO-2024-08-11-00-15-38 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-38 (1).jpg" },
+                    { name: "PHOTO-2024-08-11-00-18-42 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-18-42 (1).jpg" },
+                    { name: "Design Image (23).JPG", image: "./graphics/Design Image (23).JPG" },
+                    { name: "PHOTO-2024-08-11-00-15-46 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-46 (1).jpg" },
+                    { name: "PHOTO-2024-08-11-00-15-43.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-43.jpg" },
+                    { name: "Design Image (10).JPG", image: "./graphics/Design Image (10).JPG" },
+                    { name: "Design Image (14).JPG", image: "./graphics/Design Image (14).JPG" },
+                    { name: "Design Image (20).JPG", image: "./graphics/Design Image (20).JPG" },
+                    { name: "PHOTO-2024-08-11-00-15-49 (1).jpg", image: "./graphics/PHOTO-2024-08-11-00-15-49 (1).jpg" },
+                    { name: "PHOTO-2024-08-11-00-15-52.jpg", image: "./graphics/PHOTO-2024-08-11-00-15-52.jpg" },
+                    { name: "Design Image (37).JPG", image: "./graphics/Design Image (37).JPG" },
+                    { name: "Design Image (11).JPG", image: "./graphics/Design Image (11).JPG" }
+                ];
+
+
+                arri.forEach(function (immu) {
                     clutter += `
                     
                     <div class="box">
@@ -287,25 +401,26 @@
                         <div class="caption">Lorem ipsum</div>
                     </div>`;
                 });
-    
+
                 var container = document.querySelector(".containeri2");
                 if (container) {
                     container.innerHTML = clutter;
                     container.style.padding = "40px";
                 } else {
-                    
+
                 }
             }
-    
+
             addingImages2(); // Call the function here
         });
     </script>
-    
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
-    <script src="ourwork.js"></script> 
+    <script src="ourwork.js"></script>
 
 </body>
+
 </html>

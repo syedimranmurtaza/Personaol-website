@@ -10,6 +10,8 @@ body[theme="black"] {
 
 
 
+
+
 body .preloader-2 {
 
     background: #000;
@@ -174,6 +176,11 @@ html {
     }
 
 
+}
+
+
+.messText{
+    margin: 35px 5px;
 }
 
 
@@ -778,3 +785,10 @@ html {
 
 
 
+
+  .full-screen-mobile {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    position: relative; /* To allow positioning of child elements if needed */
+    overflow: hidden; /* Prevent scrolling if content exceeds viewport */
+}
